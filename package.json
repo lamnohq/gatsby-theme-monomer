@@ -1,14 +1,16 @@
 {
-  "name": "gatsby-starter-theme-workspace",
+  "name": "gatsby-theme-monomer-workspace",
   "private": true,
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn workspace example build"
+    "build": "yarn workspace site build",
+    "develop": "yarn workspace site develop",
+    "clean": "yarn workspace site clean"
   },
   "workspaces": [
-    "gatsby-theme-minimal",
-    "example"
+    "gatsby-theme-monomer",
+    "site"
   ]
 }

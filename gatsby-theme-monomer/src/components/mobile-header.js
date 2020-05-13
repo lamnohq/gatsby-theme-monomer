@@ -58,8 +58,8 @@ const StyledMenu = styled.div`
   .bm-item:hover,
   .bm-item--active {
     text-decoration: underline;
-    text-decoration-thickness: 1px;
     outline: none;
+    border-bottom: none;
   }
 
   .bm-overlay {

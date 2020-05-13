@@ -75,12 +75,11 @@ const typography = new Typography({
     ".snippet-card__header": {
       display: "flex",
       justifyContent: "space-between",
-      alignItems: "top",
     },
     "article.snippet-card > h2": {
       fontSize: "24px",
       lineHeight: "32px",
-      margin: 0,
+      marginBottom: "8px",
     },
     ".snippet-card iframe, .gatsby-remark-oembed-preview-wrapper": {
       width: "calc(100% + 32px)",
@@ -100,8 +99,11 @@ const typography = new Typography({
       verticalAlign: "bottom",
     },
     "h3.gatsby-remark-oembed-preview-title": {
+      fontFamily: "Poppins",
+      fontSize: "14px",
+      lineHeight: "21px",
       fontWeight: "500",
-      marginBottom: "10px",
+      marginBottom: "8px",
       padding: "0 32px",
     },
     ".gatsby-remark-oembed-preview-host": {
@@ -120,11 +122,10 @@ const typography = new Typography({
     },
     ".snippet-card__header__date": {
       fontFamily: "Didact Gothic",
-      fontSize: "10px",
+      fontSize: "12px",
       textTransform: "uppercase",
       lineHeight: "16px",
       letterSpacing: "1.5px",
-      verticalAlign: "top",
     },
     ".snippet-card__comment": {
       lineHeight: "22px",
@@ -135,22 +136,23 @@ const typography = new Typography({
     },
     ".snippet-card__tag, a.snippet-card__tag:visited": {
       fontFamily: "IBM Plex Mono",
-      fontSize: "10px",
+      fontSize: "12px",
       background: hex2rgba(`#e5e5e5`),
-      lineHeight: "18px",
+      lineHeight: "22px",
       marginRight: "10px",
       padding: "8px 20px",
       fontWeight: "400",
       borderRadius: "2px",
       color: hex2rgba(`#131313`, 0.87),
       letterSpacing: "0.25px",
+      textTransform: "uppercase",
     },
     ".blog-post-preview": {
       marginBottom: "20px",
       background: "#fafafa",
     },
     ".blog-post-preview--content": {
-      padding: "16px 16px 32px 16px",
+      padding: "16px 16px 16px 16px",
     },
     ".blog-post-preview__date-time": {
       display: "flex",
@@ -185,15 +187,16 @@ const typography = new Typography({
     },
     ".blog-post-preview__tag, a.blog-post-preview__tag:visited": {
       fontFamily: "IBM Plex Mono",
-      fontSize: "10px",
+      fontSize: "12px",
       background: hex2rgba(`#e5e5e5`),
-      lineHeight: "18px",
+      lineHeight: "22px",
       marginRight: "10px",
       padding: "8px 20px",
       fontWeight: "400",
       borderRadius: "2px",
       color: hex2rgba(`#131313`, 0.87),
       letterSpacing: "0.25px",
+      textTransform: "uppercase",
     },
     ".blog-post__date-time": {
       display: "flex",
@@ -224,6 +227,7 @@ const typography = new Typography({
       borderRadius: "2px",
       color: hex2rgba(`#131313`, 0.87),
       letterSpacing: "0.25px",
+      textTransform: "uppercase",
     },
     ".blog-post__navigation-title": {
       fontFamily: "Didact Gothic",

@@ -25,6 +25,8 @@ const StyledMenu = styled.div`
     height: 14px;
     width: 14px;
     padding: 20px;
+    left: 18px;
+    margin-top: 20px;
   }
 
   .bm-cross {

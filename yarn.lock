@@ -2,6 +2,17 @@
 # yarn lockfile v1
 
 
+"@anindha/gatsby-remark-oembed@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@anindha/gatsby-remark-oembed/-/gatsby-remark-oembed-0.2.0.tgz#b70511b32008f7c2b4cd8ffcaddc807a56340bb2"
+  integrity sha512-IS83/V5j2bXR6gHL94gJg9NyKVi6c32kxbh1R0C7Y+A5gif+Cm95XNYbfpPSBJn9QWfQGRFT/Wu8v/Ov1+RZGg==
+  dependencies:
+    axios "^0.19.0"
+    bluebird "^3.5.1"
+    lodash "^4.17.14"
+    unfurl.js "^5.1.0"
+    unist-util-select "^1.5.0"
+
 "@babel/code-frame@7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
@@ -1501,15 +1512,6 @@
     html-entities "^1.2.1"
     lodash.debounce "^4.0.8"
     react-dev-utils "^9.1.0"
-
-"@raae/gatsby-remark-oembed@file:../gatsby-remark-oembed-unfurl/gatsby-remark-oembed":
-  version "0.2.0"
-  dependencies:
-    axios "^0.19.0"
-    bluebird "^3.5.1"
-    lodash "^4.17.14"
-    unfurl.js "^5.1.0"
-    unist-util-select "^1.5.0"
 
 "@reach/router@^1.3.3":
   version "1.3.3"

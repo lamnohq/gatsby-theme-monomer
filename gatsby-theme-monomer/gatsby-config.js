@@ -41,7 +41,7 @@ module.exports = themeOptions => {
         options: {
           gatsbyRemarkPlugins: [
             {
-              resolve: `@raae/gatsby-remark-oembed`,
+              resolve: `@anindha/gatsby-remark-oembed`,
               options: { unfurl: true },
             },
             {

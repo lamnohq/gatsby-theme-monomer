@@ -19,7 +19,7 @@ export default ({ data, pageContext }) => {
     margin-bottom: 64px;
   `
 
-  const NavigationContainer = styled(Link)`
+  const NavigationContainer = styled.div`
     display: flex;
     justify-content: space-between;
   `
@@ -48,7 +48,7 @@ export default ({ data, pageContext }) => {
         <span className="blog-post__author">{post.frontmatter.author}</span>
         <div className="blog-post__tags">
           {post.frontmatter.tags.map(tag => (
-            <Link to={`/search/${tag}`} className="blog-post__tag">
+            <Link to={`/search/${tag}`} className="blog-post__tag" key={tag}>
               {tag}
             </Link>
           ))}

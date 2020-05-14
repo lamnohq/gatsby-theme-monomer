@@ -33,7 +33,11 @@ export default ({
 
       <div className="blog-post-preview__tags">
         {tags.map(tag => (
-          <Link to={`/search/${tag}`} className="blog-post-preview__tag">
+          <Link
+            to={`/search/${tag}`}
+            className="blog-post-preview__tag"
+            key={tag}
+          >
             {tag}
           </Link>
         ))}

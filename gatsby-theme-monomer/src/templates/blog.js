@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from "react-feather"
 import Layout from "../components/layout"
 import BlogPostPreview from "../components/blog-post-preview"
 
-const NavigationContainer = styled(Link)`
+const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 730px;
@@ -42,6 +42,7 @@ export default ({ data, pageContext }) => {
       <Column columns={2} queries={queries} gap={"10px"}>
         {posts.map(post => (
           <BlogPostPreview
+            key={post.fields.slug}
             date={post.frontmatter.date}
             slug={post.fields.slug}
             title={post.frontmatter.title}

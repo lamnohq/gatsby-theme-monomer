@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from "react-feather"
 import Layout from "../components/layout"
 import Snippet from "../components/snippet"
 
-const NavigationContainer = styled(Link)`
+const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 730px;
@@ -43,6 +43,7 @@ export default ({ data, pageContext }) => {
       <Column columns={2} queries={queries} gap={"10px"}>
         {snippets.map(snippet => (
           <Snippet
+            key={snippet.fields.slug}
             date={snippet.frontmatter.date}
             slug={snippet.fields.slug}
             title={snippet.frontmatter.title}

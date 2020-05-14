@@ -18,7 +18,7 @@ export default ({ date, slug, title, comment, tags, body }) => (
     <p className="snippet-card__comment">{comment}</p>
     <div className="snippet-card__tags">
       {tags.map(tag => (
-        <Link to={`/search/${tag}`} className="snippet-card__tag">
+        <Link to={`/search/${tag}`} className="snippet-card__tag" key={tag}>
           {tag}
         </Link>
       ))}

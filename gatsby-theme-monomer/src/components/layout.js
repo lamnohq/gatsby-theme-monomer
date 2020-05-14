@@ -16,15 +16,11 @@ const Container = styled.div`
   }
 `
 
-const MobileHeaderStyled = styled(MobileHeader)`
-  z-index: 5000;
-`
-
 export default ({ children }) => {
   return (
     <>
       <SiteMetadata />
-      <MobileHeaderStyled />
+      <MobileHeader />
       <Container>
         <Header />
         <main>{children}</main>

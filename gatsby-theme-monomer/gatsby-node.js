@@ -106,7 +106,7 @@ const createPostPages = (section, posts, createPage, reporter) => {
       context: {
         slug: post.fields.slug,
         prev: prev && {
-          title: post.frontmatter.title,
+          title: prev.frontmatter.title,
           link: prev.fields.slug,
         },
         next: next && {

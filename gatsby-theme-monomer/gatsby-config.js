@@ -47,7 +47,7 @@ module.exports = themeOptions => {
             {
               resolve: `gatsby-remark-images`,
               options: {
-                maxWidth: 10000,
+                maxWidth: 2000,
                 linkImagesToOriginal: false,
                 quality: 80,
                 withWebp: true,

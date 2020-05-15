@@ -74,6 +74,7 @@ const Container = styled.header`
     display: none;
   }
   position: fixed;
+  z-index: 1000;
 `
 
 const LogoLink = styled(Link)`

@@ -27,5 +27,5 @@ module.exports = {
 That's it, you can now run your gatsby site using
 
 ```shell
-yarn develop
+gatsby develop
 ```
